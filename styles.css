@@ -1,0 +1,119 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000; 
+    color: #ffffff; 
+    line-height: 1.6;
+}
+
+
+header {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+.navbar-brand img {
+    width: 300px; 
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff !important; 
+    font-size: 1.1em;
+}
+
+
+main {
+    padding: 20px;
+}
+
+h2, h3 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.galeria-produtos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.galeria-produtos img {
+    border: 2px solid #555; 
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+/* Efeito de zoom ao passar o mouse */
+.galeria-produtos img:hover {
+    transform: scale(1.05); 
+}
+
+
+.formulario {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-control {
+    background-color: #222; 
+    color: #fff; 
+    border: 1px solid #555; 
+    margin-bottom: 15px;
+}
+
+
+.btn-primary {
+    background-color: #555;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1em;
+}
+
+
+
+footer {
+    background-color: #333; 
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .galeria-produtos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .galeria-produtos img {
+        width: 80%;
+    }
+
+    .formulario {
+        padding: 0 20px;
+    }
+}

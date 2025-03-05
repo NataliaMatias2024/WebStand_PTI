@@ -1,56 +1,97 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
+        <title>Jub's Art</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <script src=“https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js”></script>
-        <script src=“https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js”></script>
-        <script src=“https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js”></script>
-    </head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>    </head>
+        <link rel="stylesheet" href="styles.css">
     <body>
         <header>
-            <div class="logo-imagem">
-                <img src="jubs.jpg" alt="imagem do logo da empresa Jub Art: ilustração em preto e branco de uma baleia jubarte, com o nome 'Jub Art', em branco sobre fundo preto, abaixo da baleia.">
-            </div>
-            <nav>
-                <ul>
-                    <li>Sobre nós</li>
-                    <li>Serviços</li>
-                    <li>Vantagens</li>
-                    <li>Contato</li>
-                </ul>
+            <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+                <a class="navbar-brand" href="#">
+                    <img src="imagens/jubs.jpg" alt="Logo da Jub Art">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Serviços</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Vantagens</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
+                    </ul>
+                </div>
             </nav>
         </header>
         
-        <div class="apresenta">
-            <h3>Quem somos?</h3>
-        </div>
-        <div class="produtos">
-            <h3>Compre conosco!</h3>
-        </div>
-        <div class="formulario">
-            <h3>Contato</h3>
-        </div>
-        <!--EXEMPLO DE FORMULARIO-->
-        <form action=”envio.php” class=”was-validated”>
-            <div class=”form-group”>
-            <label for=”cliente”>Nome:</label>
-            <input type=”text” class=”form-control” name=”cliente”>
-            <div class=”valid-feedback”>ok</div>
-            <div class=”invalid-feedback”>Ops! Verifique seu nome</div>
-            </div>
-            <div class=”form-group”>
-            <label for=”email”>Telefone:</label>
-            <input type=”email” class=”form-control” name=”email”>
-            <div class=”valid-feedback”>Ok</div>
-            <div class=”invalid-feedback”>Ops! Verifique seu e-mail</div>
-            </div>
-            <div class=”form-group”>
-            <textarea class=”form-control” name=”pedido”></textarea>
-            </div>
-            <button type=”submit” class=”btn btnprimary”>
-            </button>
-            </form>    
+        <main>
+            <section class="apresenta">
+                <h2>Sobre Nós</h2>
+                <p class="texto_apresenta">
+                    Tudo começou em 2017, com uma ideia que foi tomando forma e ganhando vida própria. Em 2018, decidi anunciar meus serviços de forma oficial, transformando minha paixão em algo concreto.<br>
+                    Sempre busco formas diferentes e criativas de me expressar, ao mesmo tempo que ajudo a dar vida aos sonhos e desejos das pessoas que confiam no meu trabalho.<br>
+                    Sou Juliana Lima, e esta é a minha página! Aqui, compartilho um pouco do que faço e convido você a conhecer meu mundo de criação.<br>
+                    Fiquem à vontade para explorar, conhecer meu trabalho e, se sentir vontade, entre em contato para encomendar a sua peça única e especial!
+                </p>
+            </section>
+
+            <section class="servicos">
+                <h2>Conheça nossos produtos!</h2>
+                <p class="texto_servicos">
+                    Lembranças únicas, presentes especiais, brinquedos encantadores e objetos decorativos cheios de personalidade. <br>
+                    Tudo é feito de forma totalmente personalizada, com muito carinho, cuidado e atenção aos detalhes, para transformar suas ideias em realidade!
+                </p>
+                <div class="row galeria-produtos">
+                    <div class="col-md-4">
+                        <img src="imagens/carteirastecido.jpg" alt="Carteiras finas e compactas feitas de tecido, perfeitas para carregar documentos como RG, cartões e dinheiro." class="img-fluid">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="imagens/cavalomarinho.jpg" alt="Brinquedo artesanal de feltro em formato de cavalo marinho e detalhes coloridos, perfeito para presentear crianças." class="img-fluid">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="imagens/familiapanda.jpg" alt="Conjunto de brinquedos artesanais em formato de uma família de pandas: pai, mãe e filhote. Feitos com feltro e detalhes fofos, ideais para decoração ou brincadeiras." class="img-fluid">
+                    </div>
+                </div>
+            </section>
+
+            <section class="vantagens">
+                <h2>Vantagens de Comprar Comigo</h2>
+                <p class="texto_vantagens">
+                    Embora as encomendas possam levar um pouco mais de tempo para ficarem prontas, isso acontece porque sou uma empresa de uma única funcionária e todos os produtos são feitos de forma totalmente personalizada. <br>
+                    Teremos uma breve conversa sobre o que você deseja: ideias, quem será presenteado, prazos e valores. Tudo será muito claro e acertado antes mesmo do pagamento! <br>
+                    Para garantir o início do seu pedido, cobro um sinal para a compra dos materiais necessários. O valor restante será pago apenas na entrega. <br>
+                    Cada peça é entregue em mãos, dentro do prazo combinado, sem surpresas no valor final. Tudo é feito com muito cuidado, carinho e atenção aos detalhes, para que você receba algo único e especial!
+                </p>     
+            </section>
+
+            <section class="formulario">
+                <h3>Compre Comigo!</h3>
+                <form method="post" action="enviar.servidor.com">
+                    <div class="form-group">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" class="form-control" required placeholder="Digite seu nome">
+                    </div>
+                    <div class="form-group">
+                        <label for="contato">Telefone:</label>
+                        <input type="tel" id="contato" name="contato" class="form-control" required placeholder="Digite seu telefone">
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" class="form-control" required placeholder="Descreva o que você gostaria de encomendar/perguntar"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>   
+            </section>
+        </main>
+
+        <footer class="bg-dark text-white text-center py-3">
+            <p>&copy; 2017 Jub Art. Todos os direitos reservados.</p>
+            <p>Contato: contato@jubart.com | (99) 99999-9999</p>
+        </footer>
     </body>
 </html>
