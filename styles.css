@@ -97,6 +97,10 @@ footer {
 footer p {
     margin: 0;
 }
+/* rolar suave */
+html {
+    scroll-behavior: smooth;
+}
 
 /* Responsividade */
 @media (max-width: 768px) {
